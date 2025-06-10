@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>IT. Pedro Domingo Murillo - Tajani</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header>
+    <h1>IT. ESCUELA INDUSTRIAL SUPERIOR ‘PEDRO DOMINGO MURILLO’</h1>
+    <p>Sub Sede Tajani</p>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="#inicio">Inicio</a></li>
+      <li><a href="#carreras">Carreras</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+  </nav>
+  <div class="hero" id="inicio">
+    <img src="img/izquierda.jpg" alt="Imagen izquierda" class="hero-img izquierda">
+    <div class="hero-text">Bienvenidos a la Sub Sede Tajani</div>
+    <img src="img/logo.png" alt="Logo Institución" class="hero-img derecha">
+  </div>
+  <section id="institucion" class="institucion">
+  <div class="contenido-institucional">
+    <h2>¿Quiénes Somos?</h2>
+    <p>
+      La <strong>IT. Escuela Industrial Superior ‘Pedro Domingo Murillo’ – Sub Sede Tajani</strong> es una institución de educación técnica y tecnológica que forma profesionales altamente capacitados para responder a las exigencias del mercado laboral. Nuestra sub sede en Tajani ofrece un entorno académico de calidad, con infraestructura moderna, docentes comprometidos y una formación integral centrada en valores.
+    </p>
+    <p>
+      Actualmente contamos con dos carreras técnicas de alta demanda: <strong>Mecánica Automotriz</strong> e <strong>Informática Industrial</strong>, orientadas a brindar competencias prácticas y actualizadas para el desarrollo de la región y del país.
+    </p>
+  </div>
+</section>
+<section id="carreras">
+  <h2>Carreras Tecnicas</h2>
+  <div class="carrera">
+    <h3>Mecánica Automotriz</h3>
+    <div class="slider" id="slider-mecanica">
+      <img src="img/mecanica1.jpg" alt="Mecánica 1">
+      <img src="img/mecanica2.jpg" alt="Mecánica 2">
+      <img src="img/mecanica3.jpg" alt="Mecánica 3">
+    </div>
+  </div>
+  <div class="carrera">
+    <h3>Informática Industrial</h3>
+    <div class="slider" id="slider-informatica">
+      <img src="img/informatica1.jpg" alt="Informática 1">
+      <img src="img/informatica2.jpg" alt="Informática 2">
+      <img src="img/informatica3.jpg" alt="Informática 3">
+    </div>
+  </div>
+</section>
+
+  <main>
+    <section id="contacto">
+      <h2>Formulario de Contacto</h2>
+      <form id="contact-form">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required />
+        <label for="apellido">Apellido:</label>
+        <input type="text" id="apellido" name="apellido" required />
+        <label for="telefono">Teléfono:</label>
+        <input type="tel" id="telefono" name="telefono" required />
+        <label for="gmail">Gmail:</label>
+        <input type="email" id="gmail" name="gmail" required />
+       <button type="submit" class="btn-enviar">Enviar</button>
+      </form>
+    </section>
+  </main>
+   <div class="info-contacto">
+  <p><strong><i class="fas fa-phone-alt"></i> Teléfono:</strong> +591 72456789</p>
+  <p><strong><i class="fas fa-map-marker-alt"></i> Ubicación:</strong></p>
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3842.419483170986!2d-69.07095242608389!3d-15.622635018746792!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x915dfbe9475bf659%3A0xe337913e5b22fc8!2sInstituto%20Tecnol%C3%B3gico%20Escuela%20Industrial%20Superior%20Pedro%20Domingo%20Murillo%20IT.%20EISPDM%20Subsede%20Tajani!5e0!3m2!1ses-419!2sbo!4v1749478922252!5m2!1ses-419!2sbo" 
+    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" 
+    referrerpolicy="no-referrer-when-downgrade">
+  </iframe>
+  <p>
+    <a href="https://www.google.com/maps/place/Instituto+Tecnológico+Escuela+Industrial+Superior+Pedro+Domingo+Murillo+IT.+EISPDM+Subsede+Tajani" 
+       target="_blank" style="text-decoration: underline; color: #000;">
+    </a>
+  </p>
+</div>
+<div class="iconos-flotantes">
+  <a href="https://www.facebook.com/i.t.eispdm2023" target="_blank" title="Facebook">
+    <i class="fab fa-facebook-f"></i>
+  </a>
+  <a href="http://www.industrialmurillo.edu.bo/" target="_blank" title="WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+  <a href="http://www.industrialmurillo.edu.bo/" target="_blank" title="Instagram">
+    <i class="fab fa-instagram"></i>
+  </a>
+  <a href="http://www.industrialmurillo.edu.bo/" target="_blank" title="Messenger">
+    <i class="fab fa-facebook-messenger"></i>
+  </a>
+</div>
+</section>
+<!-- MODAL DE ANUNCIO -->
+<div id="anuncioModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    
+    <!-- Vista del Menú de opciones -->
+    <div id="modalInicio">
+      <h2>🔔 Noticias y Novedades</h2>
+      <p>Selecciona una opción para ver más información:</p>
+      <button onclick="mostrarInfo('inscripciones')">📅 Inscripciones</button>
+      <button onclick="mostrarInfo('eventos')">🎓 Eventos</button>
+      <button onclick="mostrarInfo('talleres')">🛠 Talleres</button>
+    </div>
+
+    <!-- Vista de contenido dinámico -->
+    <div id="modalInfo" style="display: none;">
+      <h2 id="tituloInfo"></h2>
+      <p id="contenidoInfo"></p>
+      <button onclick="volverAlMenu()">🔙 Volver al Menú</button>
+    </div>
+  </div>
+</div>
+  <footer>
+    © 2025 IT. Pedro Domingo Murillo – Sub Sede Tajani. Todos los derechos reservados.
+  </footer>
+  <div class="radio-flotante">
+  <audio controls autoplay>
+    <source src="https://stream.zeno.fm/yv3g8tvpvrhvv" type="audio/mpeg">
+    Tu navegador no soporta la reproducción de radio.
+  </audio>
+</div>
+<div class="radio-flotante">
+  <audio id="reproductor" controls autoplay></audio>
+</div>
+<script>
+  const canciones = ["musica1.mp3", ];
+  let indiceActual = 0;
+  const reproductor = document.getElementById("reproductor");
+
+  reproductor.src = canciones[indiceActual];
+  reproductor.play();
+
+  reproductor.addEventListener("ended", () => {
+    indiceActual = (indiceActual + 1) % canciones.length; 
+    reproductor.src = canciones[indiceActual];
+    reproductor.play();
+  });
+</script>
+<script>
+  window.addEventListener("load", () => {
+    const modal = document.getElementById("anuncioModal");
+    const closeBtn = document.querySelector(".close");
+    modal.style.display = "flex";
+
+    closeBtn.onclick = () => {
+      modal.style.display = "none";
+    };
+
+    window.onclick = (event) => {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    };
+  });
+</script>
+<script>
+  window.addEventListener("load", () => {
+    const modal = document.getElementById("anuncioModal");
+    const closeBtn = document.querySelector(".close");
+
+    if (!sessionStorage.getItem("anuncioVisto")) {
+      modal.style.display = "flex";
+      sessionStorage.setItem("anuncioVisto", "true");
+    }
+
+    closeBtn.onclick = () => {
+      modal.style.display = "none";
+    };
+
+    window.onclick = (event) => {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    };
+  });
+
+  function mostrarInfo(opcion) {
+    const inicio = document.getElementById("modalInicio");
+    const info = document.getElementById("modalInfo");
+    const titulo = document.getElementById("tituloInfo");
+    const contenido = document.getElementById("contenidoInfo");
+
+    inicio.style.display = "none";
+    info.style.display = "block";
+
+    switch (opcion) {
+      case "inscripciones":
+        titulo.innerText = "Fechas de Inscripción";
+        contenido.innerHTML =
+          "⏰ Inscripciones abiertas del <strong>15 de junio al 30 de julio</strong>.<br>Presenta tus documentos en Secretaría Académica.";
+        break;
+      case "eventos":
+        titulo.innerText = "Eventos Académicos";
+        contenido.innerHTML =
+          "📚 Próximos eventos:<br>- Feria de Ciencias: 20 de julio<br>- Concurso de Robótica: 5 de agosto.";
+        break;
+      case "talleres":
+        titulo.innerText = "Talleres y Ferias";
+        contenido.innerHTML =
+          "🔧 Talleres abiertos:<br>- Introducción a la Programación<br>- Mantenimiento Automotriz Básico<br><br>¡Inscríbete ahora!";
+        break;
+    }
+  }
+
+  function volverAlMenu() {
+    document.getElementById("modalInicio").style.display = "block";
+    document.getElementById("modalInfo").style.display = "none";
+  }
+</script>
+</body>
+
+</html>

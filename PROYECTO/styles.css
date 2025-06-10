@@ -1,0 +1,482 @@
+* {
+  margin: 0; padding: 0; box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background: #ffffff;
+  color: #002366;
+}
+
+header {
+  background-color: #002366;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  animation: fadeInDown 1s ease-in-out;
+}
+
+nav {
+  background-color: #ffd700;
+  padding: 10px 0;
+  animation: fadeIn 2s ease-in-out;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #002366;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.hero {
+  background: linear-gradient(#002366cc, #002366cc), 
+              url('https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Cochabamba_-Bolivia.jpg/1200px-Cochabamba-_Bolivia.jpg') 
+              no-repeat center center/cover;
+  height: 240px;
+  color: #ffd700;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  text-shadow: 2px 2px 4px #000;
+}
+
+.hero-img {
+  height: 200px;
+  width: auto;
+  border-radius: 10px;
+}
+
+.hero-text {
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-align: center;
+  flex-grow: 1;
+}
+
+main {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+h2 {
+  color: #002366;
+  margin-bottom: 10px;
+  border-left: 5px solid #ffd700;
+  padding-left: 10px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input, button {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #002366;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #001244;
+}
+
+footer {
+  background-color: #002366;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  font-size: 0.9rem;
+}
+
+@keyframes fadeInDown {
+  from { opacity: 0; transform: translateY(-30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero {
+    flex-direction: column;
+    height: auto;
+    text-align: center;
+    gap: 10px;
+  }
+}
+.institucion {
+  background-color: #f4f4f4;
+  padding: 40px 20px;
+}
+
+.contenido-institucional {
+  max-width: 900px;
+  margin: 0 auto;
+  color: #222;
+  animation: fadeIn 2s ease-in-out;
+}
+
+.contenido-institucional h2 {
+  font-size: 2rem;
+  color: #002366;
+  margin-bottom: 20px;
+}
+
+.contenido-institucional p {
+  line-height: 1.6;
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+}
+
+.btn-enviar {
+  padding: 6px 12px;      /* Controla el tamaño interno del botón */
+  font-size: 0.9rem;
+  width: auto;            /*  Para que el botón se ajuste al contenido */
+  min-width: 50px;        /*  Ancho mínimo opcional */
+  background-color: #002366;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.btn-enviar:hover {
+  background-color: #0044aa;
+}
+
+#carreras h2,
+#carreras h3 {
+  text-align: center;
+  color: #002366;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.slider {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.slider img {
+  width: 100%;
+  display: none;
+  transition: opacity 1s ease-in-out;
+  border: 2px solid #002366;
+}
+
+.slider img.active {
+  display: block;
+}
+
+.iconos-flotantes {
+  position: fixed;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  z-index: 999;
+  padding: 10px;
+}
+
+.iconos-flotantes a {
+  background-color: #004080;
+  color: white;
+  padding: 10px;
+  border-radius: 0 8px 8px 0;
+  text-align: center;
+  transition: all 0.3s ease;
+  font-size: 20px;
+}
+
+.iconos-flotantes a:hover {
+  background-color: #ffd700; /* Amarillo al pasar el mouse */
+  color: #004080;
+}
+
+.info-contacto p {
+  margin: 8px 0;
+  font-size: 16px;
+}
+
+.info-contacto i {
+  color: #004080;
+  margin-right: 5px;
+}
+
+.radio-flotante {
+  position: fixed;
+  bottom: 100px;
+  right: 20px;
+  z-index: 999;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 10px;
+  border-radius: 10px;
+}
+.radio-flotante audio {
+  width: 200px;
+}
+/* Estilos para modal de noticias */
+.modal {
+  display: block; /* visible por defecto al cargar */
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.7); /* fondo oscuro transparente */
+  font-family: Arial, sans-serif;
+}
+
+.modal-content {
+  background-color: #fff;
+  margin: 10% auto;
+  padding: 20px 30px;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 600px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.5);
+  color: #333;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+  user-select: none;
+}
+
+.close:hover {
+  color: #000;
+}
+
+.contenedor-noticias .noticia {
+  margin-bottom: 15px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+}
+
+.contenedor-noticias .noticia h3 {
+  margin: 0 0 5px 0;
+  font-weight: 700;
+  color: #2c3e50;
+}
+.iconos-flotantes a {
+  display: inline-block;
+  margin: 0 10px;
+  font-size: 28px;
+  color: #0055a5;
+  transition: transform 0.3s ease, color 0.3s ease;
+  position: relative;
+}
+
+.iconos-flotantes a:hover {
+  color: #ffcc00;
+  transform: scale(1.3) rotate(15deg);
+  text-shadow: 0 0 8px #ffcc00;
+}
+
+.iconos-flotantes a:active {
+  transform: scale(1.1) rotate(-10deg);
+}
+
+/* Para un efecto sutil de rebote */
+@keyframes rebote {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+.iconos-flotantes a:hover {
+  animation: rebote 0.5s ease forwards;
+}
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  left: 0; top: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0,0,0,0.6);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+  max-width: 500px;
+  width: 90%;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+  position: relative;
+}
+
+.close {
+  position: absolute;
+  top: 10px; right: 15px;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 30px;
+  font-weight: bold;
+  color: white;
+  transition: 0.3s ease;
+}
+
+.btn-primary {
+  background-color: #0059b3;
+}
+
+.btn-primary:hover {
+  background-color: #003d7a;
+}
+
+.btn-secondary {
+  background-color: #0099cc;
+}
+
+.btn-secondary:hover {
+  background-color: #007799;
+}
+
+.btn-tertiary {
+  background-color: #66cc66;
+  color: #003300;
+}
+
+.btn-tertiary:hover {
+  background-color: #339933;
+}
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  left: 0; top: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 500px;
+  text-align: center;
+  position: relative;
+  animation: fadeIn 0.4s ease;
+}
+
+.close {
+  position: absolute;
+  top: 12px; right: 16px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.modal-content button {
+  margin: 0.5rem;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #0057a0;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.modal-content button:hover {
+  background-color: #003d70;
+}
+
+@keyframes fadeIn {
+  from { transform: scale(0.8); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}.modal {
+  display: none;
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  max-width: 600px;
+  width: 90%;
+  text-align: center;
+  position: relative;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 24px;
+  cursor: pointer;
+}
